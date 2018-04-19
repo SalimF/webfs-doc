@@ -1,7 +1,7 @@
 # webfs-doc
 document to install webfs simple light weight web server 
 
-#installation 
+# installation 
 
 Debian/Ubuntu  
 
@@ -11,21 +11,21 @@ Redhat/CentOS/Fedora
 
 yum install webfs   
 
-###to start webfs type 
+### to start webfs type 
 
 service  webfs rstart  
 
-###Stop the server 
+### Stop the server 
 
 service  webfs stop 
 
-#the configuration file 
+# the configuration file 
 you can edit webfs setting "e.g chang root folder"
 
 nano /etc/webfsd.conf
 
 Important setting to change in webfsd.conf 
-###Change the defult port 
+### Change the defult port 
 so it will listing to port 80(default wweb browsers port)
 
 web_port="80" 
