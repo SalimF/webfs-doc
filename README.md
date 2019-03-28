@@ -59,6 +59,10 @@ web_root="/var/www"
 ## change mime type 
 mime type setting on the file 
  /etc/mime.types
+
+Example here 
+ https://www.apt-browse.org/browse/debian/jessie/main/all/mime-support/3.58/file/etc/mime.types
+ 
 ## the excutable file pathe is 
  /usr/bin/webfsd
  
