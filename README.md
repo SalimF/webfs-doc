@@ -64,49 +64,50 @@ mime type setting on the file
  
 ##  webfsd CMD 
 
--p port
-   Listen on  Port <>port<> for incoming connections e.g -p 80
+	-p port
+	   Listen on  Port <>port<> for incoming connections e.g -p 80
 
--R dir 
-  document root to <>dir<> and chroot to <>dir<>  e.g -R  /var/www
+	-R dir 
+	  document root to <>dir<> and chroot to <>dir<>  e.g -R  /var/www
 
--c n
- seet n number of arreler connection e.g 5000
-
--j
- prevent directory listing if the index-file isn't found
-
-	 -e sec
-	 Expire documents after <>sec<> seconds. Webfsd will send
+	-c n
+	 seet n number of arreler connection e.g 5000
+	-j
+	 prevent directory listing if the index-file isn't found
+	-e sec
+	Expire documents after <>sec<> seconds. Webfsd will send
 	a Expires: header set to last-modified time plus <>sec<> seconds 
-		e.g   -e 2592000    (expiration = month )
+	e.g   -e 2592000    (expiration = month )
+	
+	-y n
+	  Set the number of threads to spawn (if compiled with thread support).
 
--y n
-  Set the number of threads to spawn (if compiled with thread support).
-  
- -m file
-   Read mime types from <>file<> .  Default is /etc/mime.types
-   
- -f file
- Use <>file<> as index file for directories
+	 -m file
+	   Read mime types from <>file<> .  Default is /etc/mime.types
 
--n hostname
-Set the host  name which the server should use  e.g  -n example.com
+	 -f file
+	 Use <>file<> as index file for directories
 
--i ip
-Bind to IP-address <>ip<> e.g  -i  104.16.3.71
+	-n hostname
+	Set the host  name which the server should use  e.g  -n example.com
 
--l log
-Log all requests to the logfile <>log<> e.g -l /etc/webfs.log
+	-i ip
+	Bind to IP-address <>ip<> e.g  -i  104.16.3.71
 
--u user
-Set uid to <>user<> e.g  -u  www-data
+	-l log
+	Log all requests to the logfile <>log<> e.g -l /etc/webfs.log
 
--g group
-Set gid to <>group<>   e.g  -g www-data
+	-u user
+	Set uid to <>user<> e.g  -u  www-data
+
+	-g group
+	Set gid to <>group<>   e.g  -g www-data
 
  ## make webfs share any folder contents 
  webfs can immpidatly give any folder files public access if you run it inside any folder 
+	webfsd   -p 80
 
-   webfsd   -p 80
+# Full example 
+	webfsd -p 80 -R  /var/www -c 5000 -e 2592000 -u www-data -g www-data -l /etc/webfs.log   
+
  
