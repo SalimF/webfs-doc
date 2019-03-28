@@ -76,6 +76,11 @@ mime type setting on the file
 -j
  prevent directory listing if the index-file isn't found
 
+ -e sec
+ Expire documents after <>sec<> seconds. Webfsd will send
+a Expires: header set to last-modified time plus <>sec<> seconds 
+   e.g   -e 2592000    (expiration = month )
+
 -y n
   Set the number of threads to spawn (if compiled with thread support).
   
