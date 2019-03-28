@@ -32,19 +32,19 @@ web_port="80"
 ##  cnage document root
 web_root="/var/www"
 ##  rest of settings 
-web_index=index.html
-web_root=/var/ftp
-web_host=
-web_ip=
-web_port=
-web_virtual=false
-web_timeout=
-web_conn=
-web_dircache=
-web_accesslog=
-web_syslog=false
-web_user=www-data
-web_group=www-data
+ web_index=index.html
+ web_root=/var/ftp
+ web_host=
+ web_ip=
+ web_port=
+ web_virtual=false
+ web_timeout=
+ web_conn=
+ web_dircache=
+ web_accesslog=
+ web_syslog=false
+ web_user=www-data
+ web_group=www-data
 
 ## change mime type 
 mime type setting on the file 
