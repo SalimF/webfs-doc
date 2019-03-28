@@ -63,27 +63,42 @@ mime type setting on the file
  /usr/bin/webfsd
  
 ##  webfsd CMD 
- -p port
+
+-p port
    Listen on  Port <>port<> for incoming connections e.g -p 80
-  -R dir 
+
+-R dir 
   document root to <>dir<> and chroot to <>dir<>  e.g -R  /var/www
+
 -c n
-               seet n number of arreler connection e.g 5000
-  -j
+ seet n number of arreler connection e.g 5000
+
+-j
  prevent directory listing if the index-file isn't found
- -y n
+
+-y n
   Set the number of threads to spawn (if compiled with thread support).
   
  -m file
-   Read mime types from >file<.  Default is /etc/mime.types
+   Read mime types from <>file<> .  Default is /etc/mime.types
+   
  -f file
  Use <>file<> as index file for directories
-   -n hostname
+
+-n hostname
 Set the host  name which the server should use  e.g  -n example.com
- -i ip
-Bind to IP-address <>ip<> e.g    -i 104.16.3.71
- -l log
-Log all requests to the logfile <>log<>   e.g   -l /etc/webfs.log
+
+-i ip
+Bind to IP-address <>ip<> e.g  -i  104.16.3.71
+
+-l log
+Log all requests to the logfile <>log<> e.g -l /etc/webfs.log
+
+-u user
+Set uid to <>user<> e.g  -u  www-data
+
+-g group
+Set gid to <>group<>   e.g  -g www-data
 
  ## make webfs share any folder contents 
  webfs can immpidatly give any folder files public access if you run it inside any folder 
