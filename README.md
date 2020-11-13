@@ -19,6 +19,12 @@ service  webfs rstart
 
 service  webfs stop 
 
+# Full example 
+This is how run `webfsd` directly from the terminal replace '/var/www' with your folder path eng `.` <<-current folder path .
+
+	webfsd -p 80 -R  /var/www -c 5000 -e 2592000 -u www-data -g www-data -l /etc/webfs.log   
+
+ 
 # the configuration file 
 you can edit webfs setting "e.g chang root folder"
 
@@ -100,7 +106,3 @@ Example here
  webfs can immpidatly give any folder files public access if you run it inside any folder 
 	webfsd   -p 80
 
-# Full example 
-	webfsd -p 80 -R  /var/www -c 5000 -e 2592000 -u www-data -g www-data -l /etc/webfs.log   
-
- 
