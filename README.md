@@ -20,7 +20,7 @@ service  webfs rstart
 service  webfs stop 
 
 # Full example 
-This is how run `webfsd` directly from the terminal replace '/var/www' with your folder path eng `.` <<-current folder path .
+This is how run `webfsd` directly from the terminal replace `/var/www` with your folder path e.g `.` <<-current folder path .
 
 	webfsd -p 80 -R  /var/www -c 5000 -e 2592000 -u www-data -g www-data -l /etc/webfs.log   
 
