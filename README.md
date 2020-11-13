@@ -32,8 +32,8 @@ web_port="80"
 ##  cnage document root
 web_root="/var/www"
 ##  rest of settings 
-   web_index=index.html
-<pre>   web_host=
+<pre>   web_index=index.html
+   web_host=
    web_ip=
    web_port=
    web_virtual=false
