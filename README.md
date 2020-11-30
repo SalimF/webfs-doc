@@ -5,19 +5,19 @@ document to install webfs simple light weight web server
 
 Debian/Ubuntu  
 
-apt install webfs   
+	apt install webfs
 
 Redhat/CentOS/Fedora
 
-yum install webfs   
+	yum install webfs   
 
 ### to start webfs type 
 
-service  webfs rstart  
+	service  webfs rstart  
 
 ### Stop the server 
 
-service  webfs stop 
+	service  webfs stop 
 
 # Full example 
 This is how run `webfsd` directly from the terminal replace `/var/www` with your folder path e.g `.` <<-current folder path .
