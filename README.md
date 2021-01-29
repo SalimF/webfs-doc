@@ -24,6 +24,7 @@ This is how run `webfsd` directly from the terminal replace `/var/www` with your
 
 	webfsd -p 80 -R  /var/www -c 5000 -e 2592000 -u www-data -g www-data -l /etc/webfs.log   
 Run in the current foldet 
+
 	webfsd -p 80 -R . -i  10.10.1.1
  
 # the configuration file 
