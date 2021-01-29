@@ -23,7 +23,8 @@ Redhat/CentOS/Fedora
 This is how run `webfsd` directly from the terminal replace `/var/www` with your folder path e.g `.` <<-current folder path .
 
 	webfsd -p 80 -R  /var/www -c 5000 -e 2592000 -u www-data -g www-data -l /etc/webfs.log   
-
+Run in the current foldet 
+	webfsd -p 80 -R . -i  10.10.1.1
  
 # the configuration file 
 you can edit webfs setting "e.g chang root folder"
